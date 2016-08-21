@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mistcoder.com.brainon.MainActivity"
+
+
+
+        android:background="#458"
+        android:orientation="vertical"
+    android:weightSum="1">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="334dp"
+            android:layout_height="296dp"
+            android:layout_weight="0.47" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Brain on"
+            android:onClick="mess"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Brain off"
+            android:onClick="mess"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3495910937090990/6178903930" />
+
+
+</LinearLayout>
